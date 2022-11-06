@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">BloodDonationApp</string>
+    <string name="app_name">BloodLine</string>
+    <string name="bloodline">BLOODLINE</string>
+    <string name="slogan">Donate blood and save lives !</string>
+    <string name="donor_registration">Donor Registration</string>
+    <string name="recipient_registration">Recipient Registration</string>
+    <string name="already_registered">Already registered? Sign In</string>
+    <string name="welcome_to_application">Hello, Welcome to  this \n Application</string>
+    <string name="signup_to_continue">Sign up to continue</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_id_number">Enter ID Number</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_up">Sign Up Now</string>
+    <string name="login_page">Login Page</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="sign_in">SIGN IN NOW</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="bloodgroups">
+        <item>Select Your Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
 </resources>

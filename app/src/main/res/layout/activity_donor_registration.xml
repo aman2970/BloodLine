@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".DonorRegistrationActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/twenty"
+        app:cardCornerRadius="@dimen/thirty"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="@dimen/one_hundred_eighty"
+                android:layout_height="@dimen/one_hundred_eighty"
+                android:src="@drawable/app_logo_round"
+                android:layout_marginTop="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/welcome_donor_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/donor_registration"
+                android:textSize="@dimen/twenty_five_sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/app_logo"
+                />
+
+            <TextView
+                android:id="@+id/signup_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_to_continue"
+                android:textSize="@dimen/twenty_sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/welcome_donor_tv"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/donor_profile_image"
+                android:layout_width="@dimen/one_hundred_thirty"
+                android:layout_height="@dimen/one_hundred_thirty"
+                app:civ_border_width="6dp"
+                app:civ_border_color="@color/black"
+                android:src="@drawable/avatar_image"
+                android:layout_marginTop="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signup_tv"/>
+
+            <EditText
+                android:id="@+id/donor_full_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="@dimen/ten"
+                android:padding="@dimen/ten"
+                android:hint="@string/enter_full_name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/donor_profile_image"
+                />
+
+            <EditText
+                android:id="@+id/donor_id_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="@dimen/ten"
+                android:padding="@dimen/ten"
+                android:inputType="number"
+                android:hint="@string/enter_id_number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/donor_full_name_et"
+                />
+
+            <EditText
+                android:id="@+id/donor_phone_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="@dimen/ten"
+                android:padding="@dimen/ten"
+                android:inputType="number"
+                android:hint="@string/enter_phone_number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/donor_id_number_et"
+                />
+
+            <Spinner
+                android:id="@+id/donor_blood_group_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:gravity="center"
+                android:background="@drawable/edittext_background"
+                android:entries="@array/bloodgroups"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                android:layout_marginTop="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/donor_phone_number_et"/>
+
+            <EditText
+                android:id="@+id/donor_email_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="@dimen/ten"
+                android:padding="@dimen/ten"
+                android:inputType="textEmailAddress"
+                android:hint="@string/enter_email"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/donor_blood_group_spinner"
+                />
+
+            <EditText
+                android:id="@+id/donor_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="@dimen/ten"
+                android:padding="@dimen/ten"
+                android:inputType="textPassword"
+                android:hint="@string/enter_password"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="@dimen/eighteen_sp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/donor_email_address_et"
+                />
+
+            <Button
+                android:id="@+id/register_donor_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/twenty"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fifteen_sp"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                android:background="@drawable/button_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/donor_password_et"/>
+
+            <TextView
+                android:id="@+id/donor_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/already_registered"
+                android:textSize="@dimen/twenty_sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_marginBottom="@dimen/twenty"
+                android:layout_marginStart="@dimen/twenty"
+                android:layout_marginEnd="@dimen/twenty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/register_donor_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
