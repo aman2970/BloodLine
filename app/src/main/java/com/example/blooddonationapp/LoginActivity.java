@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
     private  FirebaseAuth.AuthStateListener authStateListener;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,13 +59,12 @@ public class LoginActivity extends AppCompatActivity {
         loader = new ProgressDialog(this);
 
 
-
-
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this,SelectRegistrationActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -96,7 +96,6 @@ public class LoginActivity extends AppCompatActivity {
                             loader.dismiss();
                         }
                     });
-
                 }
             }
         });

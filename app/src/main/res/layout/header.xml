@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="210dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:paddingTop="@dimen/five"
+    android:paddingTop="@dimen/twenty"
     android:paddingStart="@dimen/twenty"
     android:paddingEnd="@dimen/twenty"
     android:background="@drawable/header_background">
@@ -13,7 +13,6 @@
         android:id="@+id/nav_user_image"
         android:layout_width="@dimen/ninety_five"
         android:layout_height="@dimen/ninety_five"
-        android:layout_marginTop="@dimen/twenty"
         android:src="@drawable/avatar_image"
         app:civ_border_color="@color/black"
         app:civ_border_width="@dimen/five"
@@ -24,7 +23,7 @@
     
     <TextView
         android:id="@+id/nav_user_fullname"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Full name"
         android:textStyle="bold"
@@ -32,40 +31,49 @@
         android:textSize="@dimen/eighteen_sp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nav_user_image"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nav_user_image"
+        />
 
     <TextView
         android:id="@+id/nav_user_email"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="example@gmail.com"
         android:textSize="@dimen/sixteen_sp"
         android:textColor="@color/white"
         android:layout_marginStart="@dimen/five"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nav_user_fullname"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nav_user_fullname"
+        />
 
     <TextView
         android:id="@+id/nav_user_bloodgroup"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Blood group"
         android:layout_marginStart="@dimen/five"
         android:textSize="@dimen/sixteen_sp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nav_user_email"/>
 
     <TextView
         android:id="@+id/nav_user_type"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="type"
         android:layout_marginStart="@dimen/five"
         android:textSize="@dimen/sixteen_sp"
         android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/ten"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nav_user_bloodgroup"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nav_user_bloodgroup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 
 

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_image"
+        android:layout_width="@dimen/one_hundred_twenty"
+        android:layout_height="@dimen/one_hundred_twenty"
+        android:src="@drawable/avatar_image"
+        app:civ_border_width="@dimen/five"
+        app:civ_border_color="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/email_now_button"/>
+
+    <TextView
+        android:id="@+id/profile_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="type"
+        android:textSize="@dimen/eighteen_sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/user_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="@dimen/eighteen_sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/user_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_type"
+      />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textSize="@dimen/fifteen_sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/user_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_name"
+   />
+
+    <TextView
+        android:id="@+id/profile_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="phone number"
+        android:textSize="@dimen/fifteen_sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/user_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_email"
+     />
+
+    <TextView
+        android:id="@+id/profile_bloodgroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="bloodgroup"
+        android:textSize="@dimen/fifteen_sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/user_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_phone_number"
+      />
+
+        <Button
+            android:id="@+id/email_now_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            android:text="EMAIL"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:background="@drawable/button_background"
+            android:layout_marginStart="@dimen/twenty_five"
+            android:layout_marginEnd="@dimen/twenty_five"
+            android:layout_marginTop="@dimen/fifteen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_bloodgroup"
+          />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/five"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_layout"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

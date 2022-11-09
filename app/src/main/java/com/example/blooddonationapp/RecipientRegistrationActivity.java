@@ -77,6 +77,7 @@ public class RecipientRegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(RecipientRegistrationActivity.this , LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

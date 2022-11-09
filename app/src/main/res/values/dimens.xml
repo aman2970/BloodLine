@@ -20,4 +20,9 @@
     <dimen name="four">4dp</dimen>
     <dimen name="ninety_five">95dp</dimen>
     <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="one_hundred">100dp</dimen>
+    <dimen name="ten_sp">10sp</dimen>
+    <dimen name="twelve_sp">12sp</dimen>
+    <dimen name="fourteen_sp">14sp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
 </resources>

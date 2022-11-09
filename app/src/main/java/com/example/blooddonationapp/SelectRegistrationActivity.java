@@ -26,6 +26,7 @@ public class SelectRegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SelectRegistrationActivity.this , DonorRegistrationActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -34,6 +35,7 @@ public class SelectRegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SelectRegistrationActivity.this, RecipientRegistrationActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -42,6 +44,7 @@ public class SelectRegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(SelectRegistrationActivity.this , LoginActivity.class);
                 startActivity(intent);
+                finish();
 
             }
         });

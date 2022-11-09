@@ -56,7 +56,9 @@
             app:menu="@menu/main_menu"
             app:itemIconTint="@drawable/navigation_selector"
             app:itemTextColor="@drawable/navigation_view_item_selected"
+            android:layout_gravity="start"
             android:id="@+id/nav_view"
+            android:layout_marginTop="@dimen/fifteen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

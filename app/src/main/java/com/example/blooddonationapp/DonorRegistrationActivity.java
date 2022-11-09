@@ -76,6 +76,7 @@ public class DonorRegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(DonorRegistrationActivity.this , LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
