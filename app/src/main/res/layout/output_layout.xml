@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/sent_email_check"
+        android:layout_width="@dimen/two_hundred"
+        android:layout_height="@dimen/two_hundred"
+        android:src="@drawable/red_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/fifty"/>
+
+    <TextView
+        android:id="@+id/sent_email_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email_sent"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/twenty_sp"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/fifteen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sent_email_check"
+        />
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="CLOSE"
+        android:textSize="@dimen/twenty_sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/fifteen"
+        android:layout_marginBottom="@dimen/fifteen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sent_email_text"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

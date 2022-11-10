@@ -210,6 +210,67 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
+            case R.id.aplus:
+                Intent intent3 = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent3.putExtra("group","A+");
+                startActivity(intent3);
+                break;
+            case R.id.aminus:
+                Intent intent4 = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent4.putExtra("group","A-");
+                startActivity(intent4);
+                break;
+            case R.id.bplus:
+                Intent intent5 = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent5.putExtra("group","B+");
+                startActivity(intent5);
+                break;
+            case R.id.bminus:
+                Intent intent6= new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent6.putExtra("group","B-");
+                startActivity(intent6);
+                break;
+            case R.id.abplus:
+                Intent intent7 = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent7.putExtra("group","AB+");
+                startActivity(intent7);
+                break;
+            case R.id.abminus:
+                Intent intent8 = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent8.putExtra("group","AB-");
+                startActivity(intent8);
+                break;
+            case R.id.oplus:
+                Intent intent9 = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent9.putExtra("group","O+");
+                startActivity(intent9);
+                break;
+            case R.id.ominus:
+                Intent intent10 = new Intent(MainActivity.this, CategorySelectedActivity.class);
+                intent10.putExtra("group","O-");
+                startActivity(intent10);
+                break;
+            case R.id.home:
+
+                break;
+            case R.id.sentEmail:
+
+                break;
+            case R.id.compatible:
+                Intent intent11 = new Intent(MainActivity.this,CategorySelectedActivity.class);
+                intent11.putExtra("group","Compatible with me" );
+                startActivity(intent11);
+
+                break;
+            case R.id.notifications:
+
+                break;
+            case R.id.about:
+
+                break;
+            case R.id.share:
+
+                break;
             case R.id.profile:
                 Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
                 startActivity(intent);

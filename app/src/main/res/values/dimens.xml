@@ -25,4 +25,5 @@
     <dimen name="twelve_sp">12sp</dimen>
     <dimen name="fourteen_sp">14sp</dimen>
     <dimen name="twenty_five">25dp</dimen>
+    <dimen name="two_hundred">200dp</dimen>
 </resources>

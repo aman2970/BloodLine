@@ -48,6 +48,11 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
 
+    //Dependency for mail
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/mail.jar')
+
     //Dependency for firebase
     implementation 'com.google.firebase:firebase-database:20.0.6'
     implementation 'com.google.firebase:firebase-auth:21.1.0'
