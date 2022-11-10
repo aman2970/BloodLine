@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notification_profile_image"
+        android:layout_width="@dimen/fifty"
+        android:layout_height="@dimen/fifty"
+        android:src="@drawable/avatar_image"
+        app:civ_border_width="@dimen/two"
+        app:civ_border_color="@color/black"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/notification_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Aman Singh"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/notification_profile_image"
+        app:layout_constraintTop_toTopOf="@id/notification_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hello aman singh"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/notification_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notification_name"/>
+
+    <TextView
+        android:id="@+id/notification_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="18/06/2022"
+        android:layout_marginStart="@dimen/ten"
+        app:layout_constraintStart_toEndOf="@id/notification_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notification_text"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

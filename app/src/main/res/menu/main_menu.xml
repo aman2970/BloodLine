@@ -75,6 +75,7 @@
 
                 <item
                     android:id="@+id/notifications"
+                    android:visible="false"
                     android:icon="@drawable/ic_person"
                     android:title="Notifications"/>
 

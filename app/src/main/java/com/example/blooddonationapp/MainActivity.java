@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.blooddonationapp.Adapter.UserAdapter;
+import com.example.blooddonationapp.Model.Notification;
 import com.example.blooddonationapp.Model.User;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -139,6 +141,13 @@ public class MainActivity extends AppCompatActivity
                         nav_profile_image.setImageResource(R.drawable.avatar_image);
                     }
 
+                    Menu nav_menu = nav_view.getMenu();
+
+                    if(type.equals("donor")) {
+                        nav_menu.findItem(R.id.sentEmail).setTitle("Received Emails");
+                        nav_menu.findItem(R.id.notifications).setVisible(true);
+                    }
+
                 }
             }
 
@@ -254,6 +263,8 @@ public class MainActivity extends AppCompatActivity
 
                 break;
             case R.id.sentEmail:
+                Intent intent12 = new Intent(MainActivity.this, SentEmailActivity.class);
+                startActivity(intent12);
 
                 break;
             case R.id.compatible:
@@ -263,7 +274,8 @@ public class MainActivity extends AppCompatActivity
 
                 break;
             case R.id.notifications:
-
+                Intent intent13 = new Intent(MainActivity.this, NotificationsActivity.class);
+                startActivity(intent13);
                 break;
             case R.id.about:
 
