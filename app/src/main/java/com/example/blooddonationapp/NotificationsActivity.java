@@ -46,6 +46,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
         notificationList = new ArrayList<>();
         notificationAdapter = new NotificationAdapter(NotificationsActivity.this, notificationList);
+        recyclerView.setAdapter(notificationAdapter);
 
         readNotifications();
     }
