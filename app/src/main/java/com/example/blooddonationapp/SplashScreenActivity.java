@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class SplashScreenActivity extends AppCompatActivity {
     private ImageView logo;
     private TextView app_name, app_slogan;
-    private int SPLASH_SCREEN_TIME = 4000;
+    private int SPLASH_SCREEN_TIME = 4300;
 
     Animation topAnimation , bottomAnimation;
 
@@ -37,7 +37,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(SplashScreenActivity.this, SelectRegistrationActivity.class);
+                Intent intent = new Intent(SplashScreenActivity.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

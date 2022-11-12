@@ -1,7 +1,6 @@
 package com.example.blooddonationapp.Adapter;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -88,8 +87,6 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
             }
         });
-
-
 
     }
 
